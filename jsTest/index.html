@@ -8,6 +8,7 @@
 <body>
     <script src="simple.js">
         
+            /*
             for (let i = 0; i <= 30; i++) 
             {
                 rectangle(50*i, 50, 20, 20, "blue");
@@ -20,6 +21,7 @@
             triangle(400, 400, 450, 400, 400, 450, "green");
             ring(600, 400, 50, 8, "red");
 
+            //GUBBE
             //kropp
             circle(950, 300, 100, "yellow");
             rectangle(900, 400, 100, 200, "blue");
@@ -33,9 +35,19 @@
             line(930, 700, 900, 700, 5, "black");
             line(970, 700, 1000, 700, 5, "black");
 
-        //ögon
-        circle(900, 300, 10, "black");
-        circle(1000, 300, 10, "black");
+            //ögon
+            circle(900, 300, 10, "black");
+            circle(1000, 300, 10, "black");
+            */
+
+            let colors = ["blue", "red", "yellow", "green"];
+            for (let i = 0; i <= 10000; i++) 
+            {
+                let randomIndex = random(0, colors.length)
+                rectangle(random(1, 200), random(1,200), 10, 10, colors[randomIndex]);
+                
+            }
+
     </script>
     
 </body>
