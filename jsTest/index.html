@@ -40,6 +40,8 @@
             circle(1000, 300, 10, "black");
             */
 
+            //random rectangles
+            /*
             let colors = ["blue", "red", "yellow", "green"];
             for (let i = 0; i <= 10000; i++) 
             {
@@ -47,7 +49,16 @@
                 rectangle(random(1, 200), random(1,200), 10, 10, colors[randomIndex]);
                 
             }
+            */
 
+            //Random lines
+            let colors = ["blue", "red", "yellow", "green"];
+            for (let i = 0; i <= 500; i++) 
+            {
+                let randomIndex = random(0, colors.length)
+                line(random(1,200), random(1,200), random(1,200), random(1,200), 5, colors[randomIndex]);
+                
+            }
     </script>
     
 </body>
