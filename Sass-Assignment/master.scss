@@ -5,7 +5,7 @@
 
 /*Lägg mixins här*/
 
-@include color();
+
 @include customFont($catsFont, catsFont);
 body{
     background-color: white;
@@ -48,10 +48,9 @@ body{
     div{
         margin: 5%;
         width: 30%;
-        height: 70vh;
         background-color: #fff;
         box-shadow: black 0 0 20px;
-        @include textProp(1.2em, black, normal, center);
+        @include textProp(1.3em, black, normal, center);
         padding: 3%;
         
     }
@@ -64,7 +63,11 @@ body{
     @include flexProp(center, center);
     justify-content: space-around;
     h1{
-        @include textProp(3em, black, bold, center);
+        @include textProp(3.5em, black, bold, center);
+    }
+
+    h1:hover{
+        cursor: pointer;
     }
 }
 
@@ -74,10 +77,9 @@ body{
     div{
         margin: 5%;
         width: 30%;
-        height: 70vh;
         background-color: #fff;
         box-shadow: black 0 0 20px;
-        @include textProp(1.2em, black, normal, center);
+        @include textProp(1.3em, black, normal, center);
         padding: 3%;
     }
 }
@@ -94,9 +96,18 @@ body{
    div{
         margin: 5%;
         width: 30%;
-        height: 70vh;
         background-color: #fff;
         box-shadow: black 0 0 20px;
-        
+        padding: 3%;
+        @include textProp(1.3em, black, normal, center);
    }
+
+   
+}
+.footer{
+    @include flexProp(center, center);
+    width: 100%;
+    height: 100px;
+    background-color: #000;
+    color: #fff;
 }
