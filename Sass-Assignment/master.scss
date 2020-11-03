@@ -1,0 +1,102 @@
+@import "./variables";
+@import "./functions";
+
+
+
+/*Lägg mixins här*/
+
+@include color();
+@include customFont($catsFont, catsFont);
+body{
+    background-color: white;
+    margin: auto;
+    @include textProp(1em, black, normal, center);
+    
+}
+
+
+
+.navbar{
+    @include flexProp(center, center);
+    
+    h2{
+        @include textProp(5em, black, normal, center);
+        font-family: catsFont;
+
+        &:hover{
+            @include textProp(5em, red, normal, center);
+        }
+    }
+}
+
+.cats{
+    @include singleImgProp($logoImg, no-repeat);
+    width: 30vw;
+    height: 30vh;
+    
+}
+
+.startPar, .middlePar, .lastPar{
+    @include parallaxProp();
+    background-color: red;
+    height: 100vh;
+}
+
+.startPar{
+    background-image: $parallax_Img1;
+    @include flexProp(start, center);
+    div{
+        margin: 5%;
+        width: 30%;
+        height: 70vh;
+        background-color: #fff;
+        box-shadow: black 0 0 20px;
+        @include textProp(1.2em, black, normal, center);
+        padding: 3%;
+        
+    }
+}
+
+.main{
+    height: 30vh;
+    background-color: #fff;
+    color: black;
+    @include flexProp(center, center);
+    justify-content: space-around;
+    h1{
+        @include textProp(3em, black, bold, center);
+    }
+}
+
+.middlePar{
+    background-image: $parallax_Img2;
+    @include flexProp(flex-end, center);
+    div{
+        margin: 5%;
+        width: 30%;
+        height: 70vh;
+        background-color: #fff;
+        box-shadow: black 0 0 20px;
+        @include textProp(1.2em, black, normal, center);
+        padding: 3%;
+    }
+}
+
+.mediabox{
+    height: 40vh;
+    @include textProp(1.4em, #00409d, normal, center);
+    padding: 4%;
+}
+
+.lastPar{
+   background-image: $parallax_Img3;
+   @include flexProp(flex-start, center);
+   div{
+        margin: 5%;
+        width: 30%;
+        height: 70vh;
+        background-color: #fff;
+        box-shadow: black 0 0 20px;
+        
+   }
+}

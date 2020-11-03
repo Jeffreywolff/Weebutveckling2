@@ -1,0 +1,171 @@
+@charset "UTF-8";
+/*Lägg mixins här*/
+@font-face {
+  font-family: catsFont;
+  src: url("./Fonts/deathrattlebb_reg.ttf");
+}
+
+body {
+  background-color: white;
+  margin: auto;
+  font-size: 1em;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar h2 {
+  font-size: 5em;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  font-family: catsFont;
+}
+
+.navbar h2:hover {
+  font-size: 5em;
+  color: red;
+  font-weight: normal;
+  text-align: center;
+}
+
+.cats {
+  background-image: url(Images/Cats_Logo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 30vw;
+  height: 30vh;
+}
+
+.startPar, .middlePar, .lastPar {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: red;
+  height: 100vh;
+}
+
+.startPar {
+  background-image: url(Images/garfield.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.startPar div {
+  margin: 5%;
+  width: 30%;
+  height: 70vh;
+  background-color: #fff;
+  -webkit-box-shadow: black 0 0 20px;
+          box-shadow: black 0 0 20px;
+  font-size: 1.2em;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  padding: 3%;
+}
+
+.main {
+  height: 30vh;
+  background-color: #fff;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main h1 {
+  font-size: 3em;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+
+.middlePar {
+  background-image: url(Images/CatAtNight.jpg);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.middlePar div {
+  margin: 5%;
+  width: 30%;
+  height: 70vh;
+  background-color: #fff;
+  -webkit-box-shadow: black 0 0 20px;
+          box-shadow: black 0 0 20px;
+  font-size: 1.2em;
+  color: black;
+  font-weight: normal;
+  text-align: center;
+  padding: 3%;
+}
+
+.mediabox {
+  height: 40vh;
+  font-size: 1.4em;
+  color: #00409d;
+  font-weight: normal;
+  text-align: center;
+  padding: 4%;
+}
+
+.lastPar {
+  background-image: url(Images/CatVaccum.gif);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lastPar div {
+  margin: 5%;
+  width: 30%;
+  height: 70vh;
+  background-color: #fff;
+  -webkit-box-shadow: black 0 0 20px;
+          box-shadow: black 0 0 20px;
+}
+/*# sourceMappingURL=master.css.map */
