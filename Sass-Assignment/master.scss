@@ -3,15 +3,18 @@
 
 
 
-/*Lägg mixins här*/
+
 
 
 @include customFont($catsFont, catsFont);
+@include customFont($breadFont, breadFont);
+@include customFont($subTitleFont, subTitleFont);
+
 body{
     background-color: white;
     margin: auto;
-    @include textProp(1em, black, normal, center);
-    
+    @include textProp(1.4em, black, normal, center);
+    font-family: breadFont;
 }
 
 
@@ -29,12 +32,7 @@ body{
     }
 }
 
-.cats{
-    @include singleImgProp($logoImg, no-repeat);
-    width: 30vw;
-    height: 30vh;
-    
-}
+
 
 .startPar, .middlePar, .lastPar{
     @include parallaxProp();
@@ -64,6 +62,7 @@ body{
     justify-content: space-around;
     h1{
         @include textProp(3.5em, black, bold, center);
+        font-family: subTitleFont;
     }
 
     h1:hover{
@@ -85,12 +84,13 @@ body{
 }
 
 .mediabox{
-    height: 40vh;
-    @include textProp(1.4em, #00409d, normal, center);
+    
+    @include textProp(1.2em, #691A26, normal, center);
     padding: 4%;
 }
 
-.lastPar{
+#lastPar{
+    @include parallaxProp();
    background-image: $parallax_Img3;
    @include flexProp(flex-start, center);
    div{

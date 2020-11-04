@@ -1,17 +1,26 @@
-@charset "UTF-8";
-/*Lägg mixins här*/
 @font-face {
   font-family: catsFont;
   src: url("./Fonts/deathrattlebb_reg.ttf");
 }
 
+@font-face {
+  font-family: breadFont;
+  src: url("./Fonts/Mermaid.otf");
+}
+
+@font-face {
+  font-family: subTitleFont;
+  src: url("./Fonts/Top Modern.otf");
+}
+
 body {
   background-color: white;
   margin: auto;
-  font-size: 1em;
+  font-size: 1.4em;
   color: black;
   font-weight: normal;
   text-align: center;
+  font-family: breadFont;
 }
 
 .navbar {
@@ -39,15 +48,6 @@ body {
   color: red;
   font-weight: normal;
   text-align: center;
-}
-
-.cats {
-  background-image: url(Images/Cats_Logo.png);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 30vw;
-  height: 30vh;
 }
 
 .startPar, .middlePar, .lastPar {
@@ -108,6 +108,7 @@ body {
   color: black;
   font-weight: bold;
   text-align: center;
+  font-family: subTitleFont;
 }
 
 .main h1:hover {
@@ -141,15 +142,19 @@ body {
 }
 
 .mediabox {
-  height: 40vh;
-  font-size: 1.4em;
-  color: #00409d;
+  font-size: 1.2em;
+  color: #691A26;
   font-weight: normal;
   text-align: center;
   padding: 4%;
 }
 
-.lastPar {
+#lastPar {
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   background-image: url(Images/CatVaccum.gif);
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,7 +167,7 @@ body {
           align-items: center;
 }
 
-.lastPar div {
+#lastPar div {
   margin: 5%;
   width: 30%;
   background-color: #fff;
